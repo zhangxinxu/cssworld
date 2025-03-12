@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《CSS世界》官方网站-首页</title>
+<meta name="description" content="《CSS世界》官方网站，包含学习交流BBS论坛，书籍配套原型页面，书籍周边等信息" />
+<meta name="keywords" content="css, css世界" />
+<meta name="author" content="张鑫旭, zhangxinxu" />
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css?v=180420">
+</head>
+
+<body class="pc">
+	<!-- 星空 -->
+	<canvas id="starCanvas" class="canvas-star"></canvas>
+	<!-- 第一屏 -->
+	<div id="page1" class="page page-1 active">
+		<!-- 主内容 -->
+		<div class="main">
+			<h1 class="canvas-h1">
+				<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="443.89" viewBox="0 0 2048 443.89"><path d="M367.813 136.134l-67.872 18.848c-17.618-47.746-50.91-72.875-99.928-75.405-74.178 3.764-113.112 52.164-116.883 145.165 1.234 94.266 38.941 142.672 113.118 145.169 59.056 1.268 95.501-29.521 109.348-92.379l69.75 16.967c-22.625 87.992-81.712 131.328-177.212 130.086C78.709 422.049 17.762 355.48 15.259 224.742 17.762 92.771 80.594 24.903 203.79 21.129c77.915 1.271 132.589 39.589 164.023 115.005M716.143 128.592l-65.986 18.85c-11.312-47.746-40.242-70.987-86.73-69.749-52.782 0-79.827 17.61-81.068 52.781-5.032 25.161 24.516 43.362 88.616 54.674 106.806 20.122 158.977 62.22 156.481 126.32-3.777 72.91-54.674 110.582-152.717 113.118-98.037 3.771-155.857-36.431-173.442-120.66l64.094-18.854c6.28 57.821 42.101 85.489 107.47 82.954 57.794 0 86.724-19.478 86.724-58.445 5.005-28.897-27.668-50.253-98.035-64.1-101.814-20.092-150.832-58.441-147.055-115.009 3.771-70.37 52.789-106.811 147.055-109.347 85.453 1.272 136.968 37.089 154.593 107.467M1073.901 128.592l-65.987 18.85c-11.312-47.746-40.242-70.987-86.731-69.749-52.781 0-79.826 17.61-81.068 52.781-5.032 25.161 24.516 43.362 88.616 54.674 106.805 20.122 158.977 62.22 156.482 126.32-3.777 72.91-54.674 110.582-152.717 113.118-98.037 3.771-155.857-36.431-173.442-120.66l64.094-18.854c6.28 57.821 42.101 85.489 107.47 82.954 57.793 0 86.724-19.478 86.724-58.445 5.005-28.897-27.668-50.253-98.037-64.1-101.813-20.091-150.831-58.44-147.055-115.008 3.771-70.37 52.79-106.811 147.054-109.347 85.457 1.271 136.971 37.088 154.597 107.466M1137.802 169.053v-54.967h45.806V35.299h60.456v78.787h56.804V20.645h60.457v93.441h86.112V18.815h60.47v95.271h53.129v54.967h-53.129V319.3h-207.039V169.053h-56.804v207.04h307.816v51.302h-368.272V169.053h-45.806zm223.522 95.281h86.112v-95.281h-86.112v95.281zM1861.521 442.045V297.301h20.148c-28.107-17.087-49.464-34.805-64.121-53.127-17.121 18.322-39.704 36.04-67.791 53.127h23.818c0 42.778-5.503 73.301-16.496 91.616-13.45 18.323-40.303 36.638-80.611 54.973-14.657-19.558-27.482-34.812-38.476-45.818 34.181-12.189 56.791-25.014 67.785-38.477 7.329-7.322 10.999-21.98 10.999-43.959-25.65 12.214-53.771 23.805-84.281 34.811-8.563-15.865-18.952-32.986-31.146-51.307 61.06-15.859 108.696-34.806 142.911-56.805h-102.604V35.299h353.608v207.036h-108.093c39.08 24.456 88.544 42.154 148.408 53.147-6.127 9.785-16.497 28.107-31.147 54.965-30.543-9.771-58.026-20.16-82.449-31.148v122.746h-60.462zm-161.234-327.959h87.946V82.939h-87.946v31.147zm0 80.622h87.946v-32.984h-87.946v32.984zm236.348-111.769h-87.945v31.146h87.945V82.939zm-87.94 111.769h87.946v-32.984h-87.946v32.984z"/></svg>CSS世界
+			</h1>
+			<a href="https://www.zhangxinxu.com/" class="author trans" title="访问作者的个人网站" target="_blank">张鑫旭<span class="space">◎</span>著</a>
+			<div id="fish" class="fish">
+				<svg width="600" height="300" viewBox="0 0 600 300" class="fish-img">
+				    <image xlink:href="./assets/images/fish.svg" width="600" height="300" filter="url(#filter-ripple-1)"></image> 
+				</svg>
+				<img src="./assets/images/fish.svg" class="fish-loader" onload="document.getElementById('fish').style.opacity=1;">
+			</div>
+			<input id="buyChk" type="checkbox">
+			<div class="buy">
+				<label class="buy-btn trans" role="button" for="buyChk">购买</label>
+				<!-- 购买的几个地址 -->
+				<a href="https://item.jd.com/12262251.html" class="buy-address buy-address-1" target="_blank">京东<br>自营</a>
+				<a href="https://item.jd.com/22395159687.html" class="buy-address buy-address-2" target="_blank">人邮<br>官方</a>
+				<a href="http://www.epubit.com.cn/book/details/4767" class="buy-address buy-address-3" target="_blank">电子版</a>
+				<a href="https://weidian.com/?userid=1302830717" class="buy-address buy-address-4" target="_blank">微店<br>签名版</a>
+				<a href="http://product.dangdang.com/25206611.html" class="buy-address buy-address-5" target="_blank">当当<br>自营</a>
+				<a href="https://shop68652415.taobao.com/index.htm?spm=a1z10.3-c-s.w5002-1726752640.2.7972e4c3ZC9Uxa" class="buy-address buy-address-6" target="_blank">淘宝私人</a>
+			</div>
+			<p class="go-bbs"><a href="//bbs.cssworld.cn">前往论坛 »</a></p>
+		</div>
+	</div>
+
+	<!-- 第二屏 -->
+	<div id="page2" class="page page-2">
+		<div class="main achievement">
+			<h2 class="page-title">《CSS世界》IT新书TOP1</h2>
+			<p>《CSS世界》上市不久便快速占领京东当当IT新书榜首位，至今稳固。</p>
+			<p class="achieve-img-x odd"><img src="./assets/images/it-top-jd.png" class="achieve-img" height="187"><img src="./assets/images/it-top-dang.png" class="achieve-img" height="187"></p>
+		</div>
+	</div>
+	<!-- 第三屏 -->
+	<div id="page3" class="page page-3">
+		<div class="main achievement">
+			<h2 class="page-title">《CSS世界》销量惊人</h2>
+			<p>截止5月7日，短短6个月不到，京东《CSS世界》累积评论已达：</p>
+			<p class="power-txt-p"><strong class="power-txt">4100<span class="abs">+</span></strong></p>
+			<p>这是什么概念呢？<br>《CSS权威指南》07年出版至今已经 10 年，累积评论才5100+。</p>
+			<p class="achieve-img-x"><img src="./assets/images/jd-comment-4100.png" class="achieve-img" height="309"><img src="./assets/images/jd-authority-coments.png" class="achieve-img" height="309"></p>
+		</div>
+	</div>
+	<!-- 第四屏 -->
+	<div id="page4" class="page page-4">
+		<div class="main comments">
+			<h2 class="page-title">《CSS世界》好评如潮</h2>
+			<p class="comments-p">京东100%好评！</p>
+			<div><img src="./assets/images/jd-comment-data.png" class="achieve-img" height="116" alt="CSS世界100%好评"></div>
+			<p class="comments-p">来自微博的评价：</p>
+			<div><img src="./assets/images/weibo-comments.png" class="achieve-img" height="352" alt="CSS世界是本不可多得的好书"></div>
+		</div>
+	</div>
+	<!-- 第五屏 -->
+	<div id="page5" class="page page-5">
+		<div class="main interview">
+			<h2 class="page-title">异步社区专访</h2>
+			<h3 class="page-sub-title">专访张鑫旭：潜心钻研技术喜欢与众不同成就《CSS世界》</h3>
+			<p class="interview-p"><img src="./assets/images/me.jpg" width="240" height="320" class="avatar-me">在前端开发行业潜心近10年一直研究看似简单的CSS的人可谓是凤毛麟角，他从2009年开始写原创技术文章，现在其博客已经成为国内访问量巨大的个人前端博客之一，可以说众多前端初学者是看着他的博客成长的。他在谈到创作《CSS世界》时说：“或许是个人特质的原因，我有强烈的探索技术边界的好奇心。”下面我们将走进鑫旭的内心世界，听听他的心声。</p>
+			<p><a href="http://www.epubit.com.cn/article/1541" class="link" target="_blank">前往了解 »</a></p>
+		</div>
+	</div>
+
+	<a href="javascript:" id="iconPageDown" class="icon-page-down" data-index="2">下一屏</a>
+
+	<div id="sceneCtrl" class="scene-ctrl">
+	  	<a href="javascript:" data-index="1" class="scene-ctrl-a cur">1</a>
+	  	<a href="javascript:" data-index="2" class="scene-ctrl-a">2</a>
+	  	<a href="javascript:" data-index="3" class="scene-ctrl-a">3</a>
+	  	<a href="javascript:" data-index="4" class="scene-ctrl-a">4</a>
+	  	<a href="javascript:" data-index="5" class="scene-ctrl-a">5</a>
+	  	<a href="javascript:" data-index="1" id="iconBuy" class="icon-buy" title="购买"><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path d="M512 0C229.216 0 0 229.216 0 512c0 282.768 229.216 512 512 512 282.752 0 512-229.232 512-512C1024 229.216 794.752 0 512 0zm0 992C246.896 992 32 777.088 32 512 32 246.896 246.896 32 512 32c265.056 0 480 214.896 480 480 0 265.088-214.944 480-480 480z" fill="#fff"/><path d="M351.696 694.016s.16.32.32.32v-.32h-.32zM565.776 736.576h.496l-.496-.16zM743.52 433.152l14.208-80.576c7.504-1.872 12.864-8.688 12.176-16.64-.768-8.8-8.528-15.328-17.328-14.56l-434.432 38-15.968-90.24-.096.016 1.312 7.408a32.004 32.004 0 0 0-13.152-20.672c-7.248-5.072-15.856-6.72-23.92-5.296l-63.024 11.104c-8.704 1.536-14.512 9.84-12.976 18.544s9.84 14.512 18.544 12.976l47.344-8.352c4.032-.704 8.336.112 11.952 2.656 3.632 2.528 5.872 6.304 6.592 10.336L340.128 668.8c1.264 7.136 4.944 13.92 10.944 18.96s13.312 7.488 20.576 7.488h.144v.032h330.832c7.328 0 14.688-2.48 20.704-7.6s9.68-11.968 10.88-19.2l32.848-199.264a31.872 31.872 0 0 0-7.168-25.904c-4.448-5.232-10.224-8.56-16.368-10.16zM672.8 432l12.816-72.64 39.024-3.408L711.232 432H672.8zm-349.088-40.976l328.896-28.768L640.32 432H330.976l-7.264-40.976zm381.12 258.848c-.592 3.616-2.416 7.024-5.424 9.6a16.013 16.013 0 0 1-10.352 3.792h-303.76c-3.632 0-7.296-1.216-10.288-3.728a15.859 15.859 0 0 1-5.472-9.488L339.952 482.8c-.784-4.496.336-9.296 3.504-13.072S351.152 464 355.712 464h360.896c4.544 0 9.04 1.92 12.208 5.648a15.957 15.957 0 0 1 3.6 12.96l-27.584 167.264zM389.296 709.872c-26.464 0-48 21.536-48 48s21.536 48 48 48 48-21.536 48-48-21.536-48-48-48zm0 64c-8.816 0-16-7.168-16-16s7.184-16 16-16 16 7.168 16 16-7.184 16-16 16zM678.432 709.872c-26.464 0-48.016 21.536-48.016 48s21.552 48 48.016 48c26.448 0 47.984-21.536 47.984-48s-21.52-48-47.984-48zm0 64c-8.832 0-16.016-7.168-16.016-16s7.184-16 16.016-16c8.816 0 15.984 7.168 15.984 16s-7.168 16-15.984 16z" fill="#fff"/></svg></a>
+	</div>
+
+<svg class="svg-filters" width="0" height="0">
+    <defs>
+        <filter id="filter-ripple-1">
+            <feImage id="svgFeImage" x="0" y="0" width="600" height="300" result="ripple"></feImage>
+            <!-- color-interpolation-filters="sRGB"  -->
+            <feDisplacementMap id="feMap" xChannelSelector="G" yChannelSelector="B" in="SourceGraphic" in2="ripple" scale="0"></feDisplacementMap>
+            <feComposite operator="in" in2="ripple"></feComposite>
+        </filter>
+    </defs>
+</svg>
+<svg class="svg-filters" width="0" height="0">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
+  </defs>
+</svg>
+</div>
+
+<script src="./assets/js/script-min.js?v=180420"></script>
+</body>
+</html>
